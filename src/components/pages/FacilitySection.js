@@ -7,7 +7,7 @@ const FacilitySection = () => {
                 <div className="container-fluid">
                     <div className="row p-5">
                         <div className="col-12 col-md-12">
-                            <h2>Why Choose Our Clinic</h2>
+                            <h2 className='animate__animated animate__bounceInUp'>Why Choose Our Clinic</h2>
                         </div>
                         <div className="col-12 col-md-12">
                             <p>Here are a few reasons why Medical is the area's healthcare provider of choice.</p>

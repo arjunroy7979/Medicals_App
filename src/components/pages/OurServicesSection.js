@@ -51,7 +51,7 @@ const OurServicesSection = () => {
         <div>
             <section className="section-wrapper-2">
                 <div className="container-fluid p-5">
-                    <h3 className="text-center">Our Services</h3>
+                    <h3 className="text-center animate__animated animate__fadeInDown animate__slower animate__infinite">Our Services</h3>
                     <p className="text-center p">We offer complete healthcare to individuals with various health concerns.</p>
                     <div className="slider-container mt-5">
                         <Slider {...settings}>
