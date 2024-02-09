@@ -16,7 +16,7 @@ const RegisterSection = () => {
                             </div>
                         </div>
                         <div className="col-12 col-md-6">
-                            <form action="" className=" bg-white shadow">
+                            <form action="" className=" bg-white shadow animate__animated animate__fadeInDownBig animate__delay-1s">
                                 <div className="form-head p-4 text-center">
                                     <h1>Make an appointment</h1>
                                 </div>
