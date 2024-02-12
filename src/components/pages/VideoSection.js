@@ -7,7 +7,7 @@ const VideoSection = () => {
                 <div className="container-fluid p-5">
                     <div className="row">
                         <div className="col-12 col-md-6">
-                            <div className="video-img ">
+                            <div className="video-img">
                                 <a href="https://youtu.be/irMpTi187Xk?si=6OB9eZ3ysalRqW77">
                                     <i className="fa fa-play-circle fa-5x" aria-hidden="true"></i>
                                 </a>

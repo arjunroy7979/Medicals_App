@@ -57,7 +57,9 @@ const OurServicesSection = () => {
                         <Slider {...settings}>
                             <div>
                                 <div className="card" style={{ width: "17rem" }}>
-                                    <img src="../images/i.jpg" className="card-img-top w3-image" alt=".." />
+                                    <div class="inner">
+                                        <img src="../images/i.jpg" className="card-img-top w3-image" alt=".." />
+                                    </div>
                                     <div className="card-body bg-danger text-white">
                                         <h5 className="card-title">Imaging & Diagnostics</h5>
                                         <p className="card-text text-white">Medical Provide a compherensive array of diagonistic
@@ -68,7 +70,9 @@ const OurServicesSection = () => {
                             </div>
                             <div>
                                 <div className="card" style={{ width: "17rem" }}>
-                                    <img src="../images/i1.jpg" className="card-img-top w3-image" alt=".." />
+                                    <div class="inner">
+                                        <img src="../images/i1.jpg" className="card-img-top w3-image" alt=".." />
+                                    </div>
                                     <div className="card-body bg-primary text-white">
                                         <h5 className="card-title">Imaging & Diagnostics</h5>
                                         <p className="card-text text-white">Medical Provide a compherensive array of diagonistic
@@ -79,7 +83,9 @@ const OurServicesSection = () => {
                             </div>
                             <div>
                                 <div className="card" style={{ width: "17rem" }}>
-                                    <img src="../images/i2.jpg" className="card-img-top w3-image" alt=".." />
+                                    <div class="inner">
+                                        <img src="../images/i2.jpg" className="card-img-top w3-image" alt=".." />
+                                    </div>
                                     <div className="card-body bg-warning text-white">
                                         <h5 className="card-title">Imaging & Diagnostics</h5>
                                         <p className="card-text text-white">Medical Provide a compherensive array of diagonistic
@@ -90,7 +96,9 @@ const OurServicesSection = () => {
                             </div>
                             <div>
                                 <div className="card" style={{ width: "17rem" }}>
-                                    <img src="../images/i3.jpg" className="card-img-top w3-image" alt=".." />
+                                    <div class="inner">
+                                        <img src="../images/i3.jpg" className="card-img-top w3-image" alt=".." />
+                                    </div>
                                     <div className="card-body bg-light ">
                                         <h5 className="card-title">Imaging & Diagnostics</h5>
                                         <p className="card-text">Medical Provide a compherensive array of diagonistic /imaging
@@ -100,7 +108,9 @@ const OurServicesSection = () => {
                             </div>
                             <div>
                                 <div className="card" style={{ width: "17rem" }}>
-                                    <img src="../images/i4.jpg" className="card-img-top w3-image" alt=".." />
+                                    <div class="inner">
+                                        <img src="../images/i4.jpg" className="card-img-top w3-image" alt=".." />
+                                    </div>
                                     <div className="card-body bg-secondary text-white">
                                         <h5 className="card-title">Imaging & Diagnostics</h5>
                                         <p className="card-text text-white">Medical Provide a compherensive array of diagonistic
@@ -111,7 +121,9 @@ const OurServicesSection = () => {
                             </div>
                             <div>
                                 <div className="card" style={{ width: "17rem" }}>
-                                    <img src="../images/i5.jpg" className="card-img-top w3-image" alt=".." />
+                                    <div class="inner">
+                                        <img src="../images/i5.jpg" className="card-img-top w3-image" alt=".." />
+                                    </div>
                                     <div className="card-body bg-success text-white">
                                         <h5 className="card-title">Imaging & Diagnostics</h5>
                                         <p className="card-text text-white">Medical Provide a compherensive array of diagonistic
