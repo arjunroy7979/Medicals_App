@@ -58,7 +58,7 @@ const OurServicesSection = (props) => {
                         <Slider {...settings}>
                             <div>
                                 <div className="card" style={{ width: "17rem" }}>
-                                    <div class="inner">
+                                    <div className="inner">
                                         <img src="../images/i.jpg" className="card-img-top w3-image" alt=".." />
                                     </div>
                                     <div className="card-body bg-danger text-white">
@@ -71,7 +71,7 @@ const OurServicesSection = (props) => {
                             </div>
                             <div>
                                 <div className="card" style={{ width: "17rem" }}>
-                                    <div class="inner">
+                                    <div className="inner">
                                         <img src="../images/i1.jpg" className="card-img-top w3-image" alt=".." />
                                     </div>
                                     <div className="card-body bg-primary text-white">
@@ -84,7 +84,7 @@ const OurServicesSection = (props) => {
                             </div>
                             <div>
                                 <div className="card" style={{ width: "17rem" }}>
-                                    <div class="inner">
+                                    <div className="inner">
                                         <img src="../images/i2.jpg" className="card-img-top w3-image" alt=".." />
                                     </div>
                                     <div className="card-body bg-warning text-white">
@@ -97,7 +97,7 @@ const OurServicesSection = (props) => {
                             </div>
                             <div>
                                 <div className="card" style={{ width: "17rem" }}>
-                                    <div class="inner">
+                                    <div className="inner">
                                         <img src="../images/i3.jpg" className="card-img-top w3-image" alt=".." />
                                     </div>
                                     <div className="card-body bg-light ">
@@ -109,7 +109,7 @@ const OurServicesSection = (props) => {
                             </div>
                             <div>
                                 <div className="card" style={{ width: "17rem" }}>
-                                    <div class="inner">
+                                    <div className="inner">
                                         <img src="../images/i4.jpg" className="card-img-top w3-image" alt=".." />
                                     </div>
                                     <div className="card-body bg-secondary text-white">
@@ -122,7 +122,7 @@ const OurServicesSection = (props) => {
                             </div>
                             <div>
                                 <div className="card" style={{ width: "17rem" }}>
-                                    <div class="inner">
+                                    <div className="inner">
                                         <img src="../images/i5.jpg" className="card-img-top w3-image" alt=".." />
                                     </div>
                                     <div className="card-body bg-success text-white">
