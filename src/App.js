@@ -12,7 +12,7 @@ const App = () => {
       <Navbar />
       <RegisterSection />
       <FacilitySection />
-      <OurServicesSection />
+      <OurServicesSection ourservices={"Our Services"} />
       <VideoSection />
     </div>
   )

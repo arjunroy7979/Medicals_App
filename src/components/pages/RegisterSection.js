@@ -1,5 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 const RegisterSection = () => {
+    const data = { name: "", email: "", phone: "" };
+    const [inputData, setInputData] = useState(data);
+    const [Falg, setFlag] = useState(false);
+
+    const handleData = (e) => {
+        setInputData({ ...inputData, [e.target.name]: e.target.value });
+    }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!inputData.name || !inputData.email || !inputData.phone) {
+            alert("All Fileds Are Mandatory")
+        }
+        else {
+            setFlag(true);
+            console.log(inputData);
+        }
+    }
     return (
         <div>
             <section className="section-wrapper">
@@ -16,7 +33,7 @@ const RegisterSection = () => {
                             </div>
                         </div>
                         <div className="col-12 col-md-6">
-                            <form action="" className=" bg-white shadow animate__animated animate__fadeInDownBig animate__slower">
+                            <form action="" className=" bg-white shadow animate__animated animate__fadeInDownBig animate__slower" onSubmit={handleSubmit}>
                                 <div className="form-head p-4 text-center">
                                     <h1>Make an appointment</h1>
                                 </div>
@@ -26,19 +43,19 @@ const RegisterSection = () => {
                                             details.</p>
                                     </div>
                                     <div className="mb-3">
-                                        <input type="text" placeholder="Your name *" className="form-control p-4" />
+                                        <input type="text" placeholder="Your name *" className="form-control p-4" name='name' value={inputData.name} onChange={handleData} />
                                     </div>
                                     <div className="mb-3">
-                                        <input type="text" placeholder="Your email address *" className="form-control p-4" />
+                                        <input type="text" placeholder="Your email address *" className="form-control p-4" name='email' value={inputData.email} onChange={handleData} />
                                     </div>
                                     <div className="mb-4">
-                                        <input type="text" placeholder="Phone number *" className="form-control p-4" />
+                                        <input type="text" placeholder="Phone number *" className="form-control p-4" name='phone' value={inputData.phone} onChange={handleData} />
                                     </div>
                                     <div className="mb-4">
-                                        <button className=" btn btn-primary">Book now</button>
+                                        <button className=" btn btn-primary" type='submit'>Book now</button>
                                     </div>
                                     <div className="form-sugesstion">
-                                        <p>Hurry up, we have a limited amount of slots this month.</p>
+                                        <p>{(Falg) ? `Hello ${inputData.name}, You are Registered Successfully` : `Hurry up, we have a limited amount of slots this month.`}</p>
                                     </div>
                                 </div>
                             </form>
