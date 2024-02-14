@@ -16,7 +16,7 @@ const App = () => {
             <Navbar />
             <RegisterSection />
             <FacilitySection />
-            <OurServicesSection />
+            <OurServicesSection ourservices={'Our Services'}/>
             <VideoSection />
           </>} />
           <Route path='/userdetails' element={

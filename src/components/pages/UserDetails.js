@@ -1,12 +1,18 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { deleteUser } from '../../redux/UserReducer'
+import { useNavigate } from 'react-router-dom'
 
 const UserDetails = () => {
     const users = useSelector((state) => state.users)
     const dispatch = useDispatch()
+    const navigate = useNavigate();
+
     const handleDelete = (id) => {
-        dispatch(deleteUser({ id: id }))
+        if (window.confirm("Are you sure you want to Delete?")) {
+            dispatch(deleteUser({ id: id }))
+            navigate('/')
+        }
     }
 
     return (
