@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { createContext } from 'react'
 import './App.css'
 import Navbar from './components/navbar/Navbar'
 import RegisterSection from './components/pages/RegisterSection'
@@ -7,6 +7,9 @@ import OurServicesSection from './components/pages/OurServicesSection'
 import VideoSection from './components/pages/VideoSection'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import UserDetails from './components/pages/UserDetails'
+
+const OurServices = createContext();
+
 const App = () => {
   return (
     <div>
@@ -16,7 +19,9 @@ const App = () => {
             <Navbar />
             <RegisterSection />
             <FacilitySection />
-            <OurServicesSection ourservices={'Our Services'}/>
+            <OurServices.Provider value={'Our Services'}>
+              <OurServicesSection />
+            </OurServices.Provider>
             <VideoSection />
           </>} />
           <Route path='/userdetails' element={
@@ -31,3 +36,4 @@ const App = () => {
 }
 
 export default App
+export { OurServices };

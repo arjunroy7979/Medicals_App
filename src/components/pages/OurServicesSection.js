@@ -1,7 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types';
+import React, { useContext } from 'react'
+// import PropTypes from 'prop-types';
 import Slider from "react-slick";
-const OurServicesSection = (props) => {
+import { OurServices } from '../../App';
+const OurServicesSection = () => {
     const settings = {
         dots: true,
         infinite: true,
@@ -48,11 +49,14 @@ const OurServicesSection = (props) => {
             }
         ]
     };
+
+    const services = useContext(OurServices);
+
     return (
         <div>
             <section className="section-wrapper-2">
                 <div className="container-fluid p-5">
-                    <h3 className="text-center animate__animated animate__fadeInDown animate__slower animate__infinite">{props.ourservices}</h3>
+                    <h3 className="text-center animate__animated animate__fadeInDown animate__slower animate__infinite">{services}</h3>
                     <p className="text-center p">We offer complete healthcare to individuals with various health concerns.</p>
                     <div className="slider-container mt-5">
                         <Slider {...settings}>
@@ -141,9 +145,9 @@ const OurServicesSection = (props) => {
     )
 }
 
-OurServicesSection.propTypes = {
-    ourservices: PropTypes.string.isRequired,
-}
+// OurServicesSection.propTypes = {
+//     ourservices: PropTypes.string.isRequired,
+// }
 
 
 export default OurServicesSection
